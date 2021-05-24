@@ -7415,7 +7415,10 @@ var $elm$html$Html$h1 = _VirtualDom_node('h1');
 var $elm$html$Html$header = _VirtualDom_node('header');
 var $author$project$Main$viewHeader = A2(
 	$elm$html$Html$header,
-	_List_Nil,
+	_List_fromArray(
+		[
+			$elm$html$Html$Attributes$class('px-4 py-5')
+		]),
 	_List_fromArray(
 		[
 			A2(
@@ -7673,7 +7676,7 @@ var $author$project$Main$view = function (date) {
 				$elm$html$Html$main_,
 				_List_fromArray(
 					[
-						$elm$html$Html$Attributes$class('column')
+						$elm$html$Html$Attributes$class('column px-3 py-3')
 					]),
 				_List_fromArray(
 					[

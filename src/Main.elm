@@ -61,7 +61,7 @@ view date =
             "Year Progress"
             [ CDN.stylesheet
             , viewHeader
-            , main_ [ class "column" ]
+            , main_ [ class "column px-3 py-3" ]
                    [ viewProgressBar v
                    , viewDetail date diffDays
                    ]
@@ -70,7 +70,8 @@ view date =
 
 viewHeader : Html msg
 viewHeader =
-    header [] [ h1 [ class "title" ] [ text "Year Progress" ] ]
+    header [ class "px-4 py-5" ]
+           [ h1 [ class "title" ] [ text "Year Progress" ] ]
 
 viewFooter : Html msg
 viewFooter =
